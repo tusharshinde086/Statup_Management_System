@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:background="#7DCBF0"
+    android:gravity="center_vertical"
+    android:clickable="true"
+    android:focusable="true">
+
+    <TextView
+        android:id="@+id/employee_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="ID"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:padding="8dp"
+        android:textColor="#000"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/employee_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:text="Name"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:padding="8dp"
+        android:textColor="#000"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/employee_role"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:text="Role"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:padding="8dp"
+        android:textColor="#000"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/employee_email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:text="Email"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:padding="8dp"
+        android:textColor="#000"
+        android:gravity="center" />
+
+    <!-- If tracking employee progress, keep this -->
+    <SeekBar
+        android:id="@+id/employee_progress_bar"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="0"
+        android:padding="4dp" />
+
+    <TextView
+        android:id="@+id/employee_progress_percentage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0%"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:padding="8dp"
+        android:textColor="#000"
+        android:gravity="center" />
+</TableRow>

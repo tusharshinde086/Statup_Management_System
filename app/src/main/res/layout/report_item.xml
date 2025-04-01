@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    android:padding="12dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        android:elevation="4dp"
+        android:padding="12dp"
+        android:layout_marginBottom="8dp">
+
+        <!-- Report Title -->
+        <TextView
+            android:id="@+id/reportTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Report Title"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#212121"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:paddingBottom="4dp" />
+
+        <!-- Report Date -->
+        <TextView
+            android:id="@+id/reportDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date: 01/01/2025"
+            android:textSize="14sp"
+            android:textColor="#757575"
+            android:paddingBottom="6dp" />
+
+        <!-- Report Content -->
+        <TextView
+            android:id="@+id/reportContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Report Content"
+            android:textSize="16sp"
+            android:textColor="#424242"
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:paddingBottom="6dp" />
+
+        <!-- Assigned Employees -->
+        <TextView
+            android:id="@+id/reportEmployees"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Employees: No employees assigned"
+            android:textSize="14sp"
+            android:textColor="#616161"
+            android:paddingBottom="8dp" />
+
+        <!-- Progress Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingVertical="6dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Progress:"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#212121"
+                android:paddingEnd="6dp" />
+
+            <SeekBar
+                android:id="@+id/reportProgressBar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:max="100"
+                android:progress="0"
+                android:thumbTint="@android:color/black"
+                android:progressTint="@android:color/holo_blue_dark"
+                android:splitTrack="false" />
+
+            <TextView
+                android:id="@+id/reportProgressText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0%"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:paddingStart="6dp"
+                android:textColor="#212121" />
+        </LinearLayout>
+
+        <!-- Status Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingTop="6dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Status:"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#212121"
+                android:paddingEnd="6dp" />
+
+            <Spinner
+                android:id="@+id/reportStatusSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:background="@android:drawable/btn_dropdown"
+                android:entries="@array/report_status_options" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/buttonColor"
+        android:textColor="@color/white"
+        android:drawableEnd="@drawable/ic_login"
+        android:drawablePadding="8dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:elevation="4dp"
+        android:stateListAnimator="@null"
+        android:background="@drawable/login_button_background"
+        />
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/ts8"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/logoImageView"
+        android:fillViewport="true"
+        android:padding="24dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/projectTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TechStart Startup Management System"
+                android:textSize="28sp"
+                android:textColor="@color/primaryColor"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:id="@+id/introText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Empowering startups with a streamlined, role-based Android application. Designed to automate and simplify employee, project, and task management, our system ensures efficient resource allocation and enhanced productivity. Built with Java and SQLite, it offers secure, real-time data access, enabling startups to focus on innovation and growth."
+                android:textSize="18sp"
+                android:textColor="@color/introTextColor"
+                android:layout_marginBottom="24dp" />
+
+            <TextView
+                android:id="@+id/featuresHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Key Features"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="@color/featureHeaderColor"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:id="@+id/featuresList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Role-Based Authentication\n• Employee Management\n• Project and Task Tracking\n• Real-Time Reporting\n• Secure Local Data Storage"
+                android:textSize="18sp"
+                android:textColor="@color/featuresTextColor"
+                android:layout_marginBottom="24dp" />
+
+            <TextView
+                android:id="@+id/objectiveHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Our Objective"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="@color/objectiveHeaderColor"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:id="@+id/objectiveText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="To provide a reliable, efficient platform that automates startup management, enhancing productivity through secure data handling and streamlined operations."
+                android:textSize="18sp"
+                android:textColor="@color/objectiveTextColor"
+                android:layout_marginBottom="24dp" />
+
+            <TextView
+                android:id="@+id/methodologyHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Technical Approach"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="@color/blue"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:id="@+id/methodologyText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. SQLite Database Integration\n2. Java-Based Application Logic\n3. Role-Specific User Interface\n4. Real-Time Data Synchronization"
+                android:textSize="18sp"
+                android:textColor="@color/methodologyTextColor" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

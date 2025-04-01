@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="purple_500">#9C27B0</color>
+    <color name="purple_700">#7B1FA2</color>
+    <color name="light_gray">#F0F0F0</color>
+    <color name="purple_200">#E1BEE7</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="teal_200">#03DAC5</color>
+    <color name="blue_500">#2196F3</color>
+    <color name="blue_700">#1976D2</color>
+    <color name="green_500">#4CAF50</color>
+    <color name="green_700">#388E3C</color>
+    <color name="red_500">#F44336</color>
+    <color name="red_700">#D32F2F</color>
+    <color name="orange_500">#FF9800</color>
+    <color name="yellow_500">#FFEB3B</color>
+    <color name="grey_500">#9E9E9E</color>
+    <color name="grey_700">#616161</color>
+    <color name="indigo_500">#3F51B5</color>
+    <color name="indigo_700">#303F9F</color>
+    <color name="brown_500">#795548</color>
+    <color name="brown_700">#5D4037</color>
+
+    <!-- Additional colors -->
+    <color name="light_blue">#03A9F4</color>
+    <color name="amber">#FFC107</color>
+    <color name="deep_purple_500">#673AB7</color>
+    <color name="cyan_500">#00BCD4</color>
+    <color name="light_green">#8BC34A</color>
+    <color name="lime">#CDDC39</color>
+    <color name="pink">#E91E63</color>
+    <color name="deep_orange_500">#FF5722</color>
+    <color name="teal_500">#009688</color>
+
+    <!-- New Additional Colors -->
+    <color name="blue_100">#BBDEFB</color>
+    <color name="green_300">#81C784</color>
+    <color name="orange_300">#FFB74D</color>
+    <color name="yellow_300">#FFF176</color>
+    <color name="red_300">#E57373</color>
+    <color name="purple_100">#E1BEE7</color>
+    <color name="indigo_300">#7986CB</color>
+    <color name="pink_500">#E91E63</color>
+    <color name="brown_100">#D7CCC8</color>
+    <color name="teal_700">#00796B</color>
+    <color name="light_cyan">#E0F7FA</color>
+    <color name="lime_500">#CDDC39</color>
+    <color name="light_orange">#FFCC80</color>
+    <color name="deep_blue">#303F9F</color>
+    <color name="sky_blue">#00B0FF</color>
+    <color name="cherry_red">#D50000</color>
+
+    <color name="titleBackgroundColor">#F5F5F5</color>
+    <color name="introBackgroundColor">#E0F7FA</color>
+    <color name="featuresBackgroundColor">#FFEB3B</color>
+    <color name="featuresListBackgroundColor">#FFEB3B</color>
+    <color name="objectiveBackgroundColor">#FFCCBC</color>
+    <color name="objectiveTextBackgroundColor">#FFCCBC</color>
+    <color name="methodologyBackgroundColor">#C8E6C9</color>
+    <color name="methodologyTextBackgroundColor">#C8E6C9</color>
+    <color name="referencesBackgroundColor">#FFF9C4</color>
+    <color name="referencesListBackgroundColor">#FFF9C4</color>
+    <!-- General Colors -->
+
+
+    <!-- Section Background Colors -->
+    <color name="titleBackground">#E3F2FD</color>
+    <color name="introBackground">#FFFFFF</color>
+    <color name="featureHeaderBackground">#BBDEFB</color>
+    <color name="featuresBackground">#F1F8E9</color>
+    <color name="objectiveHeaderBackground">#FFEBEE</color>
+    <color name="objectiveBackground">#FFF3E0</color>
+    <color name="methodologyHeaderBackground">#C8E6C9</color>
+    <color name="methodologyBackground">#F1F8E9</color>
+    <color name="referencesHeaderBackground">#FFECB3</color>
+    <color name="referencesBackground">#FFF3E0</color>
+    <color name="primary_color">#FF5733</color>
+
+        <color name="light_pastel_blue">#E0F2F7</color>
+        <color name="dark_slate_gray">#2F4F4F</color>
+        <color name="deep_teal">#008080</color>
+        <color name="light_pastel_gray">#F0F0F0</color>
+
+    <color name="medium_gray">#808080</color>
+        <color name="button_primary">#007BFF</color>
+        <color name="button_secondary">#4682B4</color>
+        <color name="button_tertiary">#20B2AA</color>
+        <color name="button_danger">#DC143C</color>
+    <!-- Text Colors -->
+    <color name="introTextColor">#333333</color>
+    <color name="featureHeaderColor">#000000</color>
+    <color name="featuresTextColor">#212121</color>
+    <color name="objectiveHeaderColor">#000000</color>
+    <color name="objectiveTextColor">#333333</color>
+    <color name="methodologyHeaderColor">#000000</color>
+    <color name="methodologyTextColor">#212121</color>
+    <color name="referencesHeaderColor">#000000</color>
+    <color name="referencesTextColor">#212121</color>
+    <color name="custom_yellow">#FFEB3B</color>
+    <color name="custom_orange">#FF9800</color>
+    <color name="custom_purple">#9C27B0</color>
+    <color name="custom_light_blue">#03A9F4</color>
+    <color name="custom_pink">#E91E63</color>
+    <color name="blue">#0000FF</color>
+    <color name="titleColor">#FFFFFF</color>
+    <color name="textColor">#E0E0E0</color>
+    <color name="headerColor">#BBDEFB</color>
+    <color name="blue_primary">#3498DB</color>
+    <color name="blue_darker">#2980B9</color>
+    <color name="light_blue_bg">#8CBFE4</color>
+    <color name="table_background_color">#FA6D6D</color> <!-- Light Gray Background -->
+    <color name="table_row_background_color">#5082B6</color> <!-- Light Blue Row Background -->
+    <color name="table_text_color">#003366</color> <!-- Dark Blue Text -->
+    <color name="table_header_color">#0055AA</color> <!-- Header Background -->
+    <color name="table_header_text_color">#FFFFFF</color> <!-- Header Text -->
+    <color name="gray_button">#A9A9A9</color>
+
+    <color name="blue_stroke">#1565C0</color> <!-- Border color -->
+
+    <color name="edit_text_hint">#999999</color>
+    <color name="blue_secondary">#795548</color>
+    <color name="light_gray_bg">#F0F0F0</color>
+    <color name="primary_text">#990013</color>
+    <color name="secondary_text">#0D124E</color>
+    <color name="dark_blue">#00008B</color>
+    <color name="gray">#CCCCCC</color>
+    <color name="divider_color">#D3D3D3</color>
+    <color name="button_color">#007BFF</color> <!-- Example button color -->
+    <color name="table_header_background">#1976D2</color> <!-- Blue header background -->
+    <color name="table_header_text">#FFFFFF</color> <!-- White text -->
+    <color name="table_row_background">#8E5065</color> <!-- Light blue row background --><!-- Dark gray text -->
+    <color name="textview_background">#51C8FF</color> <!-- White background for TextViews -->
+    <color name="textview_text_color">#000000</color> <!-- Black text -->
+    <color name="textview_hint_color">#757575</color> <!-- Gray hint color -->
+    <color name="layout_background">#FACBCB</color> <!-- Light gray background -->
+
+    <color name="hint_color">#E91E63</color> <!-- Light gray color for hint text -->
+    <color name="hint_color2">#FF9800</color>
+    <color name="backgroundColor">#F5F5F5</color> <!-- Light gray background -->
+    <color name="buttonColor">#007BFF</color> <!-- Purple button color -->
+    <color name="primaryColor">#3F51B5</color> <!-- Deep blue primary color -->
+</resources>

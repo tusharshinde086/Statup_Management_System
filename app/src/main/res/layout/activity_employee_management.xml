@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/light_gray_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Employee"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary_text"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/nameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:padding="12dp"
+            android:background="@drawable/edittext_background"
+            android:layout_marginBottom="12dp"
+            android:textColorHint="@color/edit_text_hint"/>
+
+        <EditText
+            android:id="@+id/roleEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Role"
+            android:inputType="text"
+            android:padding="12dp"
+            android:background="@drawable/edittext_background"
+            android:layout_marginBottom="12dp"
+            android:textColorHint="@color/edit_text_hint"/>
+
+        <EditText
+            android:id="@+id/departmentEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Department"
+            android:inputType="text"
+            android:padding="12dp"
+            android:background="@drawable/edittext_background"
+            android:layout_marginBottom="12dp"
+            android:textColorHint="@color/edit_text_hint"/>
+
+        <EditText
+            android:id="@+id/emailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:padding="12dp"
+            android:background="@drawable/edittext_background"
+            android:layout_marginBottom="12dp"
+            android:textColorHint="@color/edit_text_hint"/>
+
+        <EditText
+            android:id="@+id/phoneEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone"
+            android:inputType="phone"
+            android:padding="12dp"
+            android:background="@drawable/edittext_background"
+            android:layout_marginBottom="12dp"
+            android:textColorHint="@color/edit_text_hint"/>
+
+        <EditText
+            android:id="@+id/addressEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Address"
+            android:inputType="textPostalAddress"
+            android:padding="12dp"
+            android:background="@drawable/edittext_background"
+            android:layout_marginBottom="12dp"
+            android:textColorHint="@color/edit_text_hint"/>
+
+        <EditText
+            android:id="@+id/dobEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Date of Birth (YYYY-MM-DD)"
+            android:focusable="false"
+            android:clickable="true"
+            android:padding="12dp"
+            android:background="@drawable/edittext_background"
+            android:layout_marginBottom="12dp"
+            android:textColorHint="@color/edit_text_hint"/>
+
+        <EditText
+            android:id="@+id/joiningDateEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Joining Date (YYYY-MM-DD)"
+            android:focusable="false"
+            android:clickable="true"
+            android:padding="12dp"
+            android:background="@drawable/edittext_background"
+            android:layout_marginBottom="12dp"
+            android:textColorHint="@color/edit_text_hint"/>
+
+        <EditText
+            android:id="@+id/salaryEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Salary"
+            android:inputType="numberDecimal"
+            android:padding="12dp"
+            android:background="@drawable/edittext_background"
+            android:layout_marginBottom="16dp"
+            android:textColorHint="@color/edit_text_hint"/>
+
+        <Button
+            android:id="@+id/addButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Employee"
+            android:background="@drawable/button_danger"
+            android:textColor="@color/white"
+            android:padding="16dp"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:elevation="4dp"
+            android:stateListAnimator="@null"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+
+            android:layout_marginVertical="24dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View Employees"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/cherry_red"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            android:id="@+id/viewButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View All Employees"
+            android:background="@drawable/button_secondary"
+            android:textColor="@android:color/white"
+            android:padding="16dp"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:elevation="4dp"
+            android:stateListAnimator="@null"
+            android:layout_marginBottom="16dp"/>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:background="@color/textview_background"> <!-- Background for table -->
+
+            <TableLayout
+                android:id="@+id/employeeTableLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:stretchColumns="1">
+
+                <TableRow android:background="@color/table_header_background">
+                    <TextView android:text="ID" android:textStyle="bold" android:padding="14dp"
+                        android:textColor="@color/table_header_text" android:background="@drawable/table_header"/>
+                    <TextView android:text="Name" android:textStyle="bold" android:padding="14dp"
+                        android:textColor="@color/table_header_text" android:background="@drawable/table_header"/>
+                    <TextView android:text="Role" android:textStyle="bold" android:padding="14dp"
+                        android:textColor="@color/table_header_text" android:background="@drawable/table_header"/>
+                    <TextView android:text="Department" android:textStyle="bold" android:padding="14dp"
+                        android:textColor="@color/table_header_text" android:background="@drawable/table_header"/>
+                    <TextView android:text="Email" android:textStyle="bold" android:padding="14dp"
+                        android:textColor="@color/table_header_text" android:background="@drawable/table_header"/>
+                    <TextView android:text="Phone" android:textStyle="bold" android:padding="14dp"
+                        android:textColor="@color/table_header_text" android:background="@drawable/table_header"/>
+                </TableRow>
+            </TableLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update Employee"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary_text"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText android:id="@+id/idEditText" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Employee ID" android:inputType="number" android:padding="12dp" android:background="@drawable/edittext_background" android:layout_marginBottom="12dp" android:textColorHint="@color/edit_text_hint"/>
+
+        <EditText android:id="@+id/updateNameEditText" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Name" android:inputType="textPersonName" android:padding="12dp" android:background="@drawable/edittext_background" android:layout_marginBottom="12dp" android:textColorHint="@color/edit_text_hint"/>
+
+        <EditText android:id="@+id/updateRoleEditText" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Role" android:inputType="text" android:padding="12dp" android:background="@drawable/edittext_background" android:layout_marginBottom="12dp" android:textColorHint="@color/edit_text_hint"/>
+
+        <EditText android:id="@+id/updateDepartmentEditText" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Department" android:inputType="text" android:padding="12dp" android:background="@drawable/edittext_background" android:layout_marginBottom="12dp" android:textColorHint="@color/edit_text_hint"/>
+
+        <EditText android:id="@+id/updateEmailEditText" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Email" android:inputType="textEmailAddress" android:padding="12dp" android:background="@drawable/edittext_background" android:layout_marginBottom="12dp" android:textColorHint="@color/edit_text_hint"/>
+
+        <EditText android:id="@+id/updatePhoneEditText" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Phone" android:inputType="phone" android:padding="12dp" android:background="@drawable/edittext_background" android:layout_marginBottom="12dp" android:textColorHint="@color/edit_text_hint"/>
+
+        <EditText android:id="@+id/updateAddressEditText" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Address" android:inputType="textPostalAddress" android:padding="12dp" android:background="@drawable/edittext_background" android:layout_marginBottom="12dp" android:textColorHint="@color/edit_text_hint"/>
+
+        <EditText android:id="@+id/updateDobEditText" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Date of Birth (YYYY-MM-DD)" android:focusable="false" android:clickable="true" android:padding="12dp" android:background="@drawable/edittext_background" android:layout_marginBottom="12dp" android:textColorHint="@color/edit_text_hint"/>
+
+        <EditText android:id="@+id/updateJoiningDateEditText" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Joining Date (YYYY-MM-DD)" android:focusable="false" android:clickable="true" android:padding="12dp" android:background="@drawable/edittext_background" android:layout_marginBottom="12dp" android:textColorHint="@color/edit_text_hint"/>
+
+        <EditText android:id="@+id/updateSalaryEditText"
+            android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Salary" android:inputType="numberDecimal" android:padding="12dp" android:background="@drawable/edittext_background" android:layout_marginBottom="16dp" android:textColorHint="@color/edit_text_hint"/>
+
+        <Button android:id="@+id/updateButton"
+            android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Update Employee" android:background="@drawable/button_primary" android:textColor="@android:color/white" android:padding="16dp" android:textAllCaps="false" android:textSize="16sp" android:elevation="4dp" android:stateListAnimator="@null" android:layout_marginBottom="8dp"/>
+
+        <Button android:id="@+id/removeButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Remove Employee"
+            android:background="@drawable/button_secondary"
+            android:textColor="@android:color/white"
+            android:padding="16dp"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:elevation="4dp"
+            android:stateListAnimator="@null"/>
+
+    </LinearLayout>
+</ScrollView>

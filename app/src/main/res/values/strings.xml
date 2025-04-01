@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- General Application -->
+    <string name="app_name" translatable="false">Startup Management System</string>
+
+    <!-- Navigation Messages -->
+    <string name="navigate_employee_management" translatable="false">Navigating to Employee Management</string>
+    <string name="navigate_project_management" translatable="false">Navigating to Project Management</string>
+    <string name="navigate_task_management" translatable="false">Navigating to Task Management</string>
+    <string name="navigate_reports" translatable="false">Navigating to Reports</string>
+
+    <!-- Error Handling -->
+    <string name="error_navigation" translatable="false">Error: Unable to navigate</string>
+    <string name="error_message" translatable="false">An unexpected error occurred</string>
+
+    <!-- Data Refresh -->
+    <string name="data_refreshed" translatable="false">Data refreshed successfully</string>
+
+    <!-- Buttons -->
+    <string name="retry_button" translatable="false">Retry</string>
+    <string name="select_employee" translatable="false">Select Employee</string>
+
+    <!-- Priority Levels -->
+    <string-array name="priority_array">
+        <item>Low</item>
+        <item>Normal</item>
+        <item>High</item>
+    </string-array>
+    <string-array name="task_status_options">
+        <item>Pending</item>
+        <item>In Progress</item>
+        <item>Completed</item>
+    </string-array>
+        <string-array name="report_status_options">
+            <item>Pending</item>
+            <item>In Progress</item>
+            <item>Completed</item>
+        </string-array>
+
+    <!-- Status Options -->
+    <string-array name="status_array">
+        <item>Not Started</item>
+        <item>In Progress</item>
+        <item>Pending</item>
+        <item>Blocked</item>
+        <item>Completed</item>
+    </string-array>
+
+    <!-- Progress Levels -->
+    <string-array name="progress_array">
+        <item>0%</item>
+        <item>10%</item>
+        <item>20%</item>
+        <item>30%</item>
+        <item>40%</item>
+        <item>50%</item>
+        <item>60%</item>
+        <item>70%</item>
+        <item>80%</item>
+        <item>90%</item>
+        <item>100%</item>
+    </string-array>
+
+</resources>
